@@ -1,0 +1,14 @@
+#result {
+    display: none;
+    color: #022FB3;
+}
+
+#result h1,
+#shareResult h1 {
+    color: #FF9800;
+    background-color: #022FB3;
+}
+
+#shareResult {
+    color: #022FB3;
+}
