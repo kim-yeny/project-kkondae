@@ -2,7 +2,7 @@ const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
 const result = document.querySelector('#result');
 
-const endPoint = 1;
+const endPoint = 19;
 let yesNum = 0;
 let idx;
 
