@@ -1,8 +1,6 @@
 const url = 'https://test-kkondae.netlify.app';
 
 function setShare() {
-  console.log("setShare 실행");
-
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
 

@@ -38,16 +38,10 @@ function setResult(yesNum) {
 
     if (yesNum < 8) {
         point = 0;
-        console.log("yesNum= ", yesNum);
-        console.log("yesNum < 8 :: point= ", point);
     } else if (yesNum < 16) {
         point = 1;
-        console.log("yesNum= ", yesNum);
-        console.log("7 < yesNum < 16 :: point= ", point);
     } else if (yesNum < 21) {
         point = 2;
-        console.log("yesNum= ", yesNum);
-        console.log("15 < yesNum :: point= ", point);
     } else {
         return false;
     }
