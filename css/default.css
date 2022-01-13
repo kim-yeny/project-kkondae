@@ -1,11 +1,16 @@
 @font-face {
     font-family: 'SBAggroB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-html,body {
+* {
+    cursor: none !important;
+}
+
+body,
+html {
     font-family: 'SBAggroB';
     font-size: 1.2rem;
     background-color: #FF9800;
@@ -20,6 +25,22 @@ section {
     text-align: center;
 }
 
+.cursor {
+    position: fixed;
+    z-index: 100;
+    background: #FF9800;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+
+.cursor-hover {
+    transform: scale(1.8);
+    background: #022FB3;
+}
+
 .btnBox {
     border: 3px solid #022FB3;
     background: #FFFFFF;
@@ -31,6 +52,7 @@ button {
     border: none;
     background: #FFFFFF;
     color: #022FB3;
+    transition: all 0.3s;
 }
 
 .btnBox:hover,
@@ -40,21 +62,37 @@ button {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

@@ -44,6 +44,8 @@
 
 <body>
   <div class="container px-0">
+    <div class="cursor"></div>
+
     <!-- Start page -->
     <section id="main" class="mx-auto my-5 py-5 px-3 px-md-5">
       <h1 class="py-3">
@@ -56,7 +58,7 @@
         혹시 이런 말을 입에 붙어 달고 사는 사람인가요? 그렇다면 당신은 꼰대일 확률이 높습니다. 나의 꼰대 기질이 얼마나 되는지 테스트하고,
         <span>(부디 주변 사람의 정신 건강을 위해)</span> 꼰대 탈출하자!
       </p>
-      <button class="mt-4 fs-2" onclick="js:start()">START</button>
+      <button class="mt-4 fs-2 btnStart" onclick="js:start()">START</button>
     </section>
 
     <!-- QnA page -->
@@ -141,5 +143,26 @@
 <script src="./js/data.js" charset="utf-8"></script>
 <script src="./js/test.js" charset="utf-8"></script>
 <script src="./js/share.js" charset="utf-8"></script>
+
+<script>
+  const cursor = document.querySelector(".cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+
+  const btnStart = document.querySelector(".btnStart");
+
+  btnStart.addEventListener("mouseover", () => {
+    cursor.classList.add("cursor-hover");
+  });
+  btnStart.addEventListener("mouseleave", () => {
+    cursor.classList.remove("cursor-hover");
+  });
+
+</script>
 
 </html>
