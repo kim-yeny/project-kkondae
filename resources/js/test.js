@@ -54,7 +54,7 @@ function setResult(yesNum) {
     // 넘버링된 이미지 호출
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
-    var imgURL = 'img/result-' + point + '.png';
+    var imgURL = 'resources/img/result-' + point + '.png';
 
     resultImg.src = imgURL;
     resultImg.alt = point;
