@@ -31,6 +31,13 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../resources/css/default.css">
   <link rel="stylesheet" href="../resources/css/result.css">
+  
+  <!-- KAKAO -->
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    Kakao.init('46995b6d3aa2169e078990b432b86699');
+    Kakao.isInitialized();
+  </script>
 </head>
 
 <body>
@@ -43,7 +50,7 @@
         자숙 기간 필요
       </div>
       <div id="resultImg">
-        <img src="../resources/img/result-3.png" alt="">
+        <img src="../resources/img/result-3.png" alt="3">
       </div>
       <div class="resultDesc px-2 px-md-5 my-4">
         <p>
@@ -76,6 +83,7 @@
 
 <script src="../resources/js/data.js" charset="utf-8"></script>
 <script src="../resources/js/share.js" charset="utf-8"></script>
+<!-- <script src="../resources/js/test.js" charset="utf-8"></script> -->
 <script>
   // Custom cursor
   const cursor = document.querySelector(".cursor");
