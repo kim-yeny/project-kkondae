@@ -21,11 +21,11 @@ function backList() {
 // Result 페이지 세팅
 function setResult(yesNum) {
     // QnA 사라지고 Result 등장
-    qna.style.WebkitAnimaion = "fadeOut 0.8s"
-    qna.style.animation = "fadeOut 0.8s"
+    qna.style.WebkitAnimaion = "fadeOut 0.5s"
+    qna.style.animation = "fadeOut 0.5s"
     setTimeout(() => {
-        result.style.WebkitAnimaion = "fadeIn 0.8s"
-        result.style.animation = "fadeIn 0.8s"
+        result.style.WebkitAnimaion = "fadeIn 0.5s"
+        result.style.animation = "fadeIn 0.5s"
         setTimeout(() => {
             qna.style.display = 'none';
             result.style.display = 'block';
@@ -51,9 +51,6 @@ function setResult(yesNum) {
     const resultName = document.querySelector('.resultName');
     resultName.innerHTML = infoList[point].name;
 
-    const resultDesc = document.querySelector('.resultDesc');
-    resultDesc.innerHTML = infoList[point].desc;
-
     // 넘버링된 이미지 호출
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
@@ -63,6 +60,9 @@ function setResult(yesNum) {
     resultImg.alt = point;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
+
+    const resultDesc = document.querySelector('.resultDesc');
+    resultDesc.innerHTML = infoList[point].desc;
 }
 
 // Yes or No 버튼 누를 때마다 값 계산

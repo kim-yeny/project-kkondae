@@ -15,6 +15,10 @@
     color: #aaaaaa;
 }
 
+#main .mainTxt {
+    text-align: justify;
+}
+
 #main .btnStart {
     color: #fff;
     width: 500px;

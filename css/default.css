@@ -13,12 +13,12 @@ body,
 html {
     font-family: 'SBAggroB';
     font-size: 1.2rem;
-    /* background-color: #FF9800; */
-    /* background: url("../img/background.png") no-repeat center; */
+    background: url("../img/background.png") repeat center;
+    background-attachment: fixed;
 }
 
 section {
-    width: 90%;
+    width: 85%;
     background: #FFFFFF;
     border: 3px solid #022FB3;
     border-radius: 30px;

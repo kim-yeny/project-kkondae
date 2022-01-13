@@ -47,22 +47,22 @@
     <div class="cursor"></div>
 
     <!-- Start page -->
-    <section id="main" class="mx-auto my-5 py-4 py-md-5 px-3 px-md-5">
-      <h1 class="py-3">
+    <section id="main" class="mx-auto my-3 my-md-5 py-4 py-md-5 px-3 px-md-5">
+      <h1 class="py-3 px-1">
         <em>KKONDAE TEST</em>
       </h1>
-      <p class="my-5 fs-3">
+      <p class="my-4 fs-3">
         <em>"라떼는 말이야~"<br>"요즘 애들은..."</em>
       <p>
-      <p class="px-2 px-md-5 m-0">
+      <p class="mainTxt px-2 px-md-5 m-0 fs-5">
         혹시 이런 말을 입에 붙어 달고 사는 사람인가요? 그렇다면 당신은 꼰대일 확률이 높습니다. 나의 꼰대 기질이 얼마나 되는지 테스트하고,
         <span>(부디 주변 사람의 정신 건강을 위해)</span> 꼰대 탈출하자!
       </p>
-      <button class="m-0 mt-md-5 fs-2 btnStart" onclick="js:start()">START</button>
+      <button class="m-0 mt-md-4 fs-3 btnStart" onclick="js:start()">START</button>
     </section>
 
     <!-- QnA page -->
-    <section id="qna" class="mx-auto my-5 py-5 px-3 px-md-5">
+    <section id="qna" class="mx-auto my-3 my-md-5 py-5 px-3 px-md-5">
       <div class="row topBox">
         <div class="col-lg-1 col-6 pe-lg-0 pe-2">
           <div class="btnBox homeBtn">
@@ -93,12 +93,12 @@
         <div class="row bottomBox">
           <div class="col-6 pe-2">
             <div class="btnBox">
-              <button class="ansrBtn py-5 fs-3" onclick="js:calResult(1)">YES</button>
+              <button class="ansrBtn py-5 fs-4" onclick="js:calResult(1)">YES</button>
             </div>
           </div>
           <div class="col-6 ps-2">
             <div class="btnBox">
-              <button class="ansrBtn py-5 fs-3" onclick="js:calResult(0)">NO</button>
+              <button class="ansrBtn py-5 fs-4" onclick="js:calResult(0)">NO</button>
             </div>
           </div>
         </div>
@@ -106,19 +106,19 @@
     </section>
 
     <!-- Result page -->
-    <section id="result" class="mx-auto my-5 py-5 px-3 px-md-5">
-      <h1 class="py-3">
+    <section id="result" class="mx-auto my-3 my-md-5 py-5 px-3 px-md-5">
+      <h1 class="py-3 px-1">
         <em>YOUR RESULT</em>
       </h1>
-      <div class="resultName my-5 fs-1">
+      <div class="resultName my-4 fs-2">
       </div>
       <div id="resultImg">
       </div>
-      <div class="resultDesc px-2 px-md-5 mt-5">
+      <div class="resultDesc px-2 px-md-5 my-4">
       </div>
 
       <!-- Buttons -->
-      <div class="row finalBox mt-5">
+      <div class="row finalBox">
         <div class="col-md-6 col-12 pe-md-2 mb-3 mb-0">
           <div class="btnBox shareBtn">
             <button class="py-3" onclick="js:setShare()">
@@ -143,26 +143,6 @@
 <script src="./js/data.js" charset="utf-8"></script>
 <script src="./js/test.js" charset="utf-8"></script>
 <script src="./js/share.js" charset="utf-8"></script>
-
-<script>
-  const cursor = document.querySelector(".cursor");
-
-  document.addEventListener("mousemove", (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
-  });
-
-  const btnStart = document.querySelector(".btnStart");
-
-  btnStart.addEventListener("mouseover", () => {
-    cursor.classList.add("cursorHover");
-  });
-  btnStart.addEventListener("mouseleave", () => {
-    cursor.classList.remove("cursorHover");
-  });
-
-</script>
+<script src="./js/main.js" charset="utf-8"></script>
 
 </html>
