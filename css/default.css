@@ -36,7 +36,7 @@ section {
     transition: transform 0.3s;
 }
 
-.cursor-hover {
+.cursorHover {
     transform: scale(1.8);
     background: #022FB3;
 }
