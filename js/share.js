@@ -1,4 +1,4 @@
-const url = 'https://test-kkondae.netlify.app';
+const url = 'https://project-kkondae.netlify.app';
 
 function setShare() {
   var resultImg = document.querySelector('#resultImg');
