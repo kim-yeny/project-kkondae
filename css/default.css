@@ -13,11 +13,12 @@ body,
 html {
     font-family: 'SBAggroB';
     font-size: 1.2rem;
-    background-color: #FF9800;
+    /* background-color: #FF9800; */
+    /* background: url("../img/background.png") no-repeat center; */
 }
 
 section {
-    width: 80%;
+    width: 90%;
     background: #FFFFFF;
     border: 3px solid #022FB3;
     border-radius: 30px;
@@ -27,6 +28,8 @@ section {
 
 .cursor {
     position: fixed;
+    top: 0;
+    left: -5000px;
     z-index: 100;
     background: #FF9800;
     width: 30px;
