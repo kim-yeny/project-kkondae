@@ -1,4 +1,4 @@
-const url = 'https://project-kkondae.netlify.app';
+const url = 'https://project-kkondae.netlify.app/';
 
 function setShare() {
   var resultImg = document.querySelector('#resultImg');
@@ -7,7 +7,7 @@ function setShare() {
   const shareTitle = "꼰대력 테스트"
   const shareDesc = infoList[resultAlt].name;
   const shareImage = url + 'resources/img/result-' + resultAlt + '.png';
-  const shareURL = url + 'resources/page/result-' + resultAlt + '.html';
+  const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   // 카카오 API 기본 구성 (수정본)
   Kakao.Link.sendDefault({
