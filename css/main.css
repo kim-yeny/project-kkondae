@@ -14,3 +14,15 @@
 #main span {
     color: #aaaaaa;
 }
+
+#main button {
+    color: #fff;
+    width: 500px;
+    height: 250px;
+    background: url(../img/kkondae-start-solid.png) no-repeat center;
+}
+
+#main button:hover {
+    color: #fff;
+    background: url(../img/kkondae-start-mix.png) no-repeat center;
+}

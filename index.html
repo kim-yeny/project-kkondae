@@ -44,13 +44,15 @@
 
 <body>
   <div class="container px-0">
+    <!-- Start page -->
     <section id="main" class="mx-auto my-5 py-5 px-3 px-md-5">
       <h1 class="py-3"><em>KKONDAE TEST</em></h1>
-      <p class="my-5 fs-4"><em>"라떼는 말이야~"<br>"요즘 애들은..."</em><p>
+      <p class="my-5 fs-3"><em>"라떼는 말이야~"<br>"요즘 애들은..."</em><p>
       <p class="px-2 px-md-5">혹시 이런 말을 입에 붙어 달고 사는 사람인가요? 그렇다면 당신은 꼰대일 확률이 높습니다. 나의 꼰대 기질이 얼마나 되는지 테스트하고, <span>(부디 주변 사람의 정신 건강을 위해)</span> 꼰대 탈출하자!</p>
-      <button class="mt-5" onclick="js:start()">START</button>
+      <button class="mt-5 fs-2" onclick="js:start()">START</button>
     </section>
 
+    <!-- QnA page -->
     <section id="qna" class="mx-auto my-5 py-5 px-3 px-md-5">
       <div class="row topBox">
         <div class="col-lg-1 col-6 pe-lg-0 pe-2">
@@ -94,11 +96,12 @@
       </div>
     </section>
 
+    <!-- Result page -->
     <section id="result" class="mx-auto my-5 py-5 px-3 px-md-5">
       <h1 class="py-3"><em>YOUR RESULT</em></h1>
       <div class="resultName my-5 fs-1"></div>
-      <!-- <div class="resultImg"></div>/ -->
-      <div class="resultDesc px-2 px-md-5"></div>
+      <div id="resultImg"></div>
+      <div class="resultDesc px-2 px-md-5 mt-5"></div>
       <div class="row finalBox mt-5">
         <div class="col-md-6 col-12 pe-md-2 mb-3 mb-0">
           <div class="btnBox shareBtn">

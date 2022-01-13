@@ -2,7 +2,7 @@ const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
 const result = document.querySelector('#result');
 
-const endPoint = 19;
+const endPoint = 1;
 let yesNum = 0;
 let idx;
 
@@ -51,6 +51,17 @@ function setResult(yesNum) {
 
     const resultDesc = document.querySelector('.resultDesc');
     resultDesc.innerHTML = infoList[point].desc;
+
+    // 넘버링된 이미지 호출
+    var resultImg = document.createElement('img');
+    const imgDiv = document.querySelector('#resultImg');
+    // const imgDiv = document.querySelector('.resultImg');
+    var imgURL = 'img/result-' + point + '.png';
+
+    resultImg.src = imgURL;
+    resultImg.alt = point;
+    resultImg.classList.add('img-fluid');
+    imgDiv.appendChild(resultImg);
 }
 
 // Yes or No 버튼 누를 때마다 값 계산
