@@ -4,7 +4,7 @@ function setShare() {
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
 
-  const shareTitle = "꼰대력 테스트"
+  const shareTitle = "나는 얼마나 꼰대일까? 꼰대력 테스트!"
   const shareDesc = infoList[resultAlt].name;
   const shareImage = url + 'resources/img/result-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
