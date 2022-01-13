@@ -74,7 +74,17 @@
   </div>
 </body>
 
-<script src="../resources/js/main.js" charset="utf-8"></script>
+<script src="../resources/js/data.js" charset="utf-8"></script>
 <script src="../resources/js/share.js" charset="utf-8"></script>
+<script>
+  // Custom cursor
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+</script>
 
 </html>
