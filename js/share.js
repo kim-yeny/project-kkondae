@@ -6,7 +6,7 @@ function setShare() {
 
   const shareTitle = "꼰대력 테스트"
   const shareDesc = infoList[resultAlt].name;
-  // const shareImage = url + 'img/image-' + resultAlt + '.png';
+  const shareImage = url + 'img/result-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   // 카카오 API 기본 구성 (수정본)

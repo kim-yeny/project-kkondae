@@ -2,7 +2,7 @@ const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
 const result = document.querySelector('#result');
 
-const endPoint = 1;
+const endPoint = 19;
 let yesNum = 0;
 let idx;
 
@@ -36,12 +36,14 @@ function setResult(yesNum) {
     // 합산한 yesNum 값에 따른 Result
     let point;
 
-    if (yesNum < 8) {
+    if (yesNum == 0) {
         point = 0;
-    } else if (yesNum < 16) {
+    } else if (yesNum < 8) {
         point = 1;
-    } else if (yesNum < 21) {
+    } else if (yesNum < 16) {
         point = 2;
+    } else if (yesNum < 21) {
+        point = 3;
     } else {
         return false;
     }
@@ -55,7 +57,6 @@ function setResult(yesNum) {
     // 넘버링된 이미지 호출
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
-    // const imgDiv = document.querySelector('.resultImg');
     var imgURL = 'img/result-' + point + '.png';
 
     resultImg.src = imgURL;
