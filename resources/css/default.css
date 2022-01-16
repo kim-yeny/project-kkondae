@@ -5,6 +5,14 @@
     font-style: normal;
 }
 
+/* Mobile ver. */
+@media(max-width : 767px) {
+    .cursor {
+        display: none;
+    }
+}
+
+/* PC ver. */
 * {
     cursor: none !important;
 }
@@ -13,7 +21,7 @@ body,
 html {
     font-family: 'SBAggroB';
     font-size: 1.2rem;
-    background: url("../img/background.png") repeat center;
+    background: url("../img/background.png") repeat top;
     background-attachment: fixed;
 }
 
@@ -64,6 +72,7 @@ button {
     color: #FFFFFF;
 }
 
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
