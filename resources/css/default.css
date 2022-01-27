@@ -21,6 +21,9 @@ body,
 html {
     font-family: 'SBAggroB';
     font-size: 1.2rem;
+}
+
+body {
     background: url("../img/background.png") repeat top;
     background-attachment: fixed;
 }
