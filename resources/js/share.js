@@ -7,7 +7,6 @@ function setShare() {
   const shareTitle = "▼ 꼰대력 테스트 결과"
   const shareDesc = infoList[resultAlt].name;
 
-  // const shareImage = url + 'resources/img/result-' + resultAlt + '.png';
   const shareImage = url + 'resources/img/thumb.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 

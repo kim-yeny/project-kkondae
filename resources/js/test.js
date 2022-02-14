@@ -52,9 +52,9 @@ function setResult(yesNum) {
     resultName.innerHTML = infoList[point].name;
 
     // 넘버링된 이미지 호출
-    var resultImg = document.createElement('img');
+    let resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
-    var imgURL = 'resources/img/result-' + point + '.png';
+    let imgURL = 'resources/img/result-' + point + '.png';
 
     resultImg.src = imgURL;
     resultImg.alt = point;
