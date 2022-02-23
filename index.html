@@ -28,38 +28,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS -->
-  <script src="./resources/js/prefixfree.min.js"></script>
   <link rel="stylesheet" href="./resources/css/default.css">
   <link rel="stylesheet" href="./resources/css/main.css">
   <link rel="stylesheet" href="./resources/css/qna.css">
   <link rel="stylesheet" href="./resources/css/result.css">
+  <script src="./resources/js/prefixfree.min.js"></script>
 
   <!-- KAKAO -->
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
   <script>
     Kakao.init('46995b6d3aa2169e078990b432b86699');
     Kakao.isInitialized();
-  </script>
-
-  <!-- START JS -->
-  <script>
-    // Custom cursor
-    const cursor = document.querySelector(".cursor");
-    document.addEventListener("mousemove", (e) => {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-      cursor.style.left = mouseX + 'px';
-      cursor.style.top = mouseY + 'px';
-    });
-
-    // Start.BTN - Hover effect
-    const btnStart = document.querySelector(".btnStart");
-    btnStart.addEventListener("mouseover", () => {
-      cursor.classList.add("cursorHover");
-    });
-    btnStart.addEventListener("mouseleave", () => {
-      cursor.classList.remove("cursorHover");
-    });
   </script>
 </head>
 
@@ -160,6 +139,27 @@
     </section>
   </div>
 </body>
+
+<!-- START JS -->
+<script>
+  // Custom cursor
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", function(e) {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+
+  // Start.BTN - Hover effect
+  const btnStart = document.querySelector(".btnStart");
+  btnStart.addEventListener("mouseover", function() {
+    cursor.classList.add("cursorHover");
+  });
+  btnStart.addEventListener("mouseleave", function() {
+    cursor.classList.remove("cursorHover");
+  });
+</script>
 
 <script src="./resources/js/data.js" charset="utf-8"></script>
 <script src="./resources/js/test.js" charset="utf-8"></script>
